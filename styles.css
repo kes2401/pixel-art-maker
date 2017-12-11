@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    background-color: #222;
+}
+
+h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 4rem;
+    color: #c5d300;
+    margin: 0.2em;
+}
+
+h5 {  
+    color: #0070d2;
+    margin: 1em;
+    margin-top: 30px;
+}
+
+label,
+p {
+    font-size: 0.7rem;
+    color: #b20047;
+}
+
+#color_picker {
+    border-radius: 4px;
+}
+
+table,
+tr,
+td {
+    border: 1px solid #aaa;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 30px auto;
+    background-color: #fff;
+}
+
+tr {
+    height: 18px;
+}
+
+td {
+    width: 18px;
+}
+
+input[type=number] {
+    background-color: #ccc;
+    width: 2.5em;
+    margin-right: 12px;
+    border-radius: 4px;
+}
+
+button {
+    border-radius: 4px;
+    margin-right: 6px;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+}
+
+button:hover {
+    background-color: #aaa;
+    border-color: #aaa;
+}

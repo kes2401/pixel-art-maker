@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Keith Scully" />
+    <meta charset="utf-8" />
+    <title>Pixel Art Maker!</title>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto:400,500|Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pixel Art Maker</h1>
+
+    <h5>Choose Grid Size</h5>
+    <form id="size_picker">
+        <label>Height:</label>
+        <input type="number" id="input_height" name="height" min="1" max="30" value="16">
+        <label>Width:</label>
+        <input type="number" id="input_width" name="width" min="1" max="30" value="16">
+        <button id="submit-btn">New Grid</button>
+    </form>
+    
+    <div id="colorpicker">
+        <h5>Pick A Color</h5>
+        <input type="color" id="color_picker" value="#00cc25">
+    </div>
+
+    <div>
+        <h5>Create Pixel Art</h5>
+        <p>Left Click: Add Color - Right Click: Remove Color</p>
+        <table id="pixel_canvas"></table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
