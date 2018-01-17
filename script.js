@@ -25,15 +25,34 @@ $(document).ready(function() {
 		makeGrid();
 	});
 
-	// click event to add colour to grid elements
-	$('#pixel_canvas').on('click', 'td', function() {
-		let color = $('input#color_picker').val();
+	// click event to add colour to grid elements, and allowing to drag across multiple cells
+	var isMouseDown = false;
+	let color;
+	$('#pixel_canvas').on('mousedown', 'td', function() {
+		isMouseDown = true;
+		color = $('input#color_picker').val();
 		$(this).css({ 'background-color': color });
+	}).on('mouseover', 'td', function() {
+		if(isMouseDown) {
+			$(this).css({ 'background-color': color });
+		}
 	});	
+	$(document).mouseup(function() {
+          isMouseDown = false;
+    });
 
 	// click event to remove colour from grid element
 	$('#pixel_canvas').on('contextmenu', 'td', function(e) {
 		e.preventDefault();
 		$(this).removeAttr('style');
 	});
+
+	// click border toggle button to toggle borders on the grid
+	$('.borderToggleBtn').on('click', function(){
+		$('table, tr, td').toggleClass('transparentBorder');
+	});
+
+
+
+
 });
