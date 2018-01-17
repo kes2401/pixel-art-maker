@@ -1,26 +1,24 @@
 body {
     text-align: center;
-    font-family: "Press Start 2P", cursive;
-    background-color: #222;
+    font-family: "Open Sans", sans-serif;
 }
 
 h1 {
-    font-family: "Luckiest Guy", cursive;
+    font-family: "Prosto One", cursive;
     font-size: 4rem;
-    color: #c5d300;
+    color: #002b70;
     margin: 0.2em;
 }
 
-h5 {  
-    color: #0070d2;
-    margin: 1em;
-    margin-top: 30px;
+h3 {  
+    color: #222;
+    margin-top: 20px;
 }
 
 label,
 p {
-    font-size: 0.7rem;
-    color: #b20047;
+    font-size: 0.9rem;
+    color: #478;
 }
 
 #color_picker {
@@ -30,7 +28,7 @@ p {
 table,
 tr,
 td {
-    border: 1px solid #aaa;
+    border: 0.5px solid #aaa;
 }
 
 table {
@@ -48,10 +46,11 @@ td {
 }
 
 input[type=number] {
-    background-color: #ccc;
+    background-color: #eee;
     width: 2.5em;
     margin-right: 12px;
     border-radius: 4px;
+    outline: none;
 }
 
 button {
@@ -60,9 +59,10 @@ button {
     transition: all 0.1s;
     -webkit-transition: all 0.1s;
     -moz-transition: all 0.1s;
+    outline: none;
 }
 
 button:hover {
-    background-color: #aaa;
-    border-color: #aaa;
+    background-color: #ccc;
+    border-color: #ccc;
 }
