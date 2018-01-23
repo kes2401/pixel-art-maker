@@ -1,57 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     text-align: center;
     font-family: "Open Sans", sans-serif;
+    background-color: #444;
+}
+
+.row {
+    width: 100%;
+}
+
+.left-col {
+    min-height: 100vh;
+    width: 25%;
+    float: left;
+}
+
+.center-col {
+    background-color: #333;
+    width: 75%; /*change back to 50% when right-col is added back in*/
+    min-height: 100vh;
+    float: left;
+}
+
+.right-col {
+    display: none;
+    background-color: #444;
+    min-height: 100vh;
+    width: 25%;
+    float: left;
 }
 
 h1 {
     font-family: "Prosto One", cursive;
     font-size: 4rem;
-    color: #002b70;
-    margin: 0.2em;
-}
-
-h3 {  
-    color: #222;
-    margin-top: 20px;
-}
-
-label,
-p {
-    font-size: 0.9rem;
-    color: #478;
-}
-
-#color_picker {
-    border-radius: 4px;
-}
-
-table,
-tr,
-td {
-    border: 0.5px solid #aaa;
-}
-
-.borderToggleBtn {
-    display: inline-block;
-    background-color: #aaa;
     color: #fff;
-    padding: 8px;
-    border-radius: 4px;
-    cursor: pointer;
+    margin: 1.5rem;
 }
 
-.transparentBorder {
-    border: 0 !important;
+h2 {  
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 16px auto 8px auto;
 }
 
 table {
+    border: 4px solid #888;
     border-collapse: collapse;
-    margin: 30px auto;
+    margin: 30px auto 60px auto;
     background-color: #fff;
 }
 
+tr,
+td {
+    border: 1px solid #aaa;
+}
+
+.transparentBorder {
+    border: 1px solid transparent;
+}
+
 tr {
-    height: 18px;
+    height: 18px; 
 }
 
 td {
@@ -63,23 +78,99 @@ td:hover {
 }
 
 input[type=number] {
-    background-color: #eee;
-    width: 2.5em;
-    margin-right: 12px;
-    border-radius: 4px;
+    background-color: #444;
+    height: 40px;
+    width: 43%;
+    margin: 1.5%;
+    border: 0;
+    border-bottom: 1px solid #666;
+    color: #fff;
+    font-size: 1.1rem;
+    padding-left: 20%;
     outline: none;
 }
 
-button {
-    border-radius: 4px;
-    margin-right: 6px;
-    transition: all 0.1s;
-    -webkit-transition: all 0.1s;
-    -moz-transition: all 0.1s;
-    outline: none;
+input[type=number]:hover {
+    border-bottom: 1px solid #888;
 }
 
-button:hover {
-    background-color: #ccc;
-    border-color: #ccc;
+/* feature buttons */
+
+div[class^="button"] {
+    background-color: #666;
+    border: 1px solid #777;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #fff;   
+    margin: 1.5%;
+    padding: 5px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+}
+
+.button-1 {
+    width: 97%;
+}
+
+.button-2 {
+    width: 46%;
+}
+
+.button-3 {
+    width: 29%;
+}
+
+.button-4 {
+    width: 22%;
+}
+
+div[class^="button"]:hover {
+    background-color: #888;
+}
+
+.label-2 {
+    background-color: #444;
+    border: 1px solid #666;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #fff;   
+    margin: 1.5%;
+    padding: 5px;
+    height: 40px;
+    width: 43%;
+}
+
+.smaller-font {
+    font-size: 1.1rem !important;   
+}
+
+.larger-font {
+    font-size: 3rem;
+}
+
+/* Responsive display */
+
+@media screen and (max-width: 1040px) {
+    .left-col {
+        width: 30%;
+    }
+
+    .center-col {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .left-col {
+        width: 100%;
+    }
+
+    .center-col {
+        width: 100%;
+    }
 }
