@@ -131,6 +131,12 @@ $(document).ready(function() {
 		status = 'erase';
 	});
 
+	// Function to handle Active tool styling
+	$('.tools').click(function(){
+		$('.tools').removeClass('active');
+		$(this).addClass('active');
+	});
+
 	// Export button function to save table canvas as .PNG file
 	$('.save').click(function(){
 		html2canvas($("#pixel_canvas").get(0), {
