@@ -5,8 +5,8 @@ $(document).ready(function() {
 	let row;
 	let isMouseDown = false;
 	let color;
-	let maxAllowedHeight = 30;
-	let maxAllowedWidth = 30;
+	const maxAllowedHeight = 30;
+	const maxAllowedWidth = 30;
 
 	// makeGrid function to create pixel art grid
 	function makeGrid() {
