@@ -37,7 +37,8 @@ $(document).ready(function() {
 
 	// click event to add / erase / get colour to/from grid elements,
 	// and also allowing to drag across multiple cells
-	$('#pixel_canvas').on('mousedown', 'td', function() {
+	$('#pixel_canvas').on('mousedown', 'td', function(e) {
+		e.preventDefault();
 		isMouseDown = true;
 		
 		color = $('input#color_picker').val(); // ***WILL NEED TO CHANGE THIS CODE WHEN PALETTES ADDED
