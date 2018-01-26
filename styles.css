@@ -112,6 +112,22 @@ div[class^="button"] {
     -moz-transition: all 0.25s;
 }
 
+button[class^="button"] {
+    background-color: #666;
+    border: 1px solid #777;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #fff;   
+    margin: 1.5%;
+    padding: 5px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+}
+
 .button-1 {
     width: 97%;
 }
@@ -201,8 +217,11 @@ div[class^="button"]:hover {
 @media screen and (max-width: 585px) {
 
     .first-section-header {
-        margin-top: 190px;
+        margin-top: 160px;
     }
 
+    h1 {
+        font-size: 3.25rem;
+    }
 
 }

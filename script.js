@@ -29,10 +29,13 @@ $(document).ready(function() {
 	};
 
 	// button event to create new grid
-	$('#submit-btn').on('click', function(e) {
+	$('#size_picker').on('submit', function(e) {
 		e.preventDefault();
-		$('#pixel_canvas').empty();
-		makeGrid();
+		
+			$('#pixel_canvas').empty();
+			makeGrid();
+		
+		
 	});
 
 	// click event to add / erase / get colour to/from grid elements,
